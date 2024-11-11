@@ -1,16 +1,6 @@
 // базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import '_vars', 'mixins', 'fonts', 'settings', './components/header';
 
-// подключения компонентов страницы
-@import "./components/header";
+@import './components/ui/choosing-city';
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import './components/footer';

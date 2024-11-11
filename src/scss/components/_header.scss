@@ -1,1 +1,168 @@
-// ваш код
+.header {
+  padding: 16px 0 14px 0;
+  position: relative;
+  background-color: var(--white-color);
+  z-index: 999;
+
+  @media screen and (max-width: 1024px) {
+    padding: 12px 0;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 19px;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__top-left {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &__choosing-city {
+    margin-right: 60px;
+
+    @media screen and (max-width: 1100px) {
+      margin-right: 20px;
+    }
+  }
+
+  &__company {
+    font-size: 13px;
+    font-family: 'RobotoRegular';
+    line-height: 1.4;
+    opacity: 0.6;
+  }
+
+  &__top-right {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    @media screen and (max-width: 1100px) {
+      column-gap: 15px;
+    }
+  }
+
+  &__top-link {
+    font-size: 16px;
+    font-family: 'RobotoBold';
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+
+    @media screen and (max-width: 1100px) {
+      font-size: 15px;
+    }
+
+    svg {
+      margin-right: 4px;
+
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &:hover {
+      color: var(--accent-color);
+
+      svg {
+        path {
+          fill: var(--accent-color);
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom-left {
+    display: flex;
+    margin-right: 20px;
+
+    @media screen and (max-width: 1165px) {
+      width: 253px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__search-form {
+    transition: all 0.3s;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-300%);
+    position: absolute;
+
+    &--active {
+      visibility: visible;
+      opacity: 1;
+      max-width: 755px;
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+
+  &__top-socials {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    .socials__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .socials__img {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}

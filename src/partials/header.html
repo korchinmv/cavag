@@ -1,3 +1,144 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <div class="header__top">
+      <div class="header__top-left">
+        <button class="header__choosing-city choosing-city" data-graph-path="city-modal">
+          <svg class="choosing-city__mark" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.8825 14.2827C19.4823 13.157 19.7948 11.9006 19.7923 10.6252C19.7923 6.32187 16.304 2.8335 12.0007 2.8335C7.69737 2.8335 4.209 6.32187 4.209 10.6252C4.20576 12.4632 4.8555 14.2427 6.04233 15.6462L6.0515 15.6577L6.05975 15.6668H6.04233L10.666 20.5756C10.8374 20.7575 11.0442 20.9025 11.2737 21.0016C11.5032 21.1007 11.7505 21.1518 12.0004 21.1518C12.2504 21.1518 12.4977 21.1007 12.7272 21.0016C12.9567 20.9025 13.1635 20.7575 13.3349 20.5756L17.959 15.6668H17.9416L17.9489 15.6581L17.9498 15.6572C17.9828 15.6178 18.0157 15.5781 18.0484 15.538C18.3664 15.1474 18.6457 14.7273 18.8825 14.2827ZM12.003 13.6039C11.2736 13.6039 10.5741 13.3141 10.0584 12.7984C9.54269 12.2827 9.25295 11.5832 9.25295 10.8539C9.25295 10.1245 9.54269 9.42505 10.0584 8.90933C10.5741 8.3936 11.2736 8.10387 12.003 8.10387C12.7323 8.10387 13.4318 8.3936 13.9475 8.90933C14.4632 9.42505 14.753 10.1245 14.753 10.8539C14.753 11.5832 14.4632 12.2827 13.9475 12.7984C13.4318 13.3141 12.7323 13.6039 12.003 13.6039Z"
+              fill="#00AEF1" />
+          </svg>
+
+          <span class="choosing-city__name">Москва</span>
+
+          <svg class="choosing-city__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.6">
+              <path d="M12.7992 5.59998L7.99922 10.4L3.19922 5.59998" stroke="#3E3A39" stroke-width="2"
+                stroke-linecap="square" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
+
+        <span class="header__company">ООО «ТЕХНОТРЕЙД»</span>
+      </div>
+
+      <ul class="header__top-right">
+        <li class="header__top-item">
+          <a class="header__top-link" href="mailto:info@cavag.ru">
+            <div class="header__top-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.37736 3.65463L7.29403 9.57196C7.46906 9.74712 7.70286 9.8511 7.95016 9.86379C8.19745 9.87647 8.44066 9.79695 8.6327 9.64063L8.7087 9.57196L14.6214 3.65863C14.6405 3.73196 14.6534 3.80685 14.66 3.88329L14.6654 3.99996V12C14.6655 12.3363 14.5384 12.6603 14.3097 12.907C14.081 13.1536 13.7675 13.3047 13.432 13.33L13.332 13.3333H2.66536C2.32898 13.3334 2.00499 13.2064 1.75833 12.9776C1.51168 12.7489 1.36059 12.4354 1.33536 12.1L1.33203 12V3.99996C1.33203 3.91996 1.3387 3.84218 1.35203 3.76663L1.37736 3.65463ZM13.332 2.66663C13.4129 2.66663 13.4918 2.67351 13.5687 2.68729L13.682 2.71329L8.00203 8.39329L2.32003 2.71196C2.39381 2.69196 2.46936 2.67863 2.5467 2.67196L2.66536 2.66663H13.332Z"
+                  fill="#00aef1" />
+              </svg>
+            </div>
+
+            info@cavag.ru
+          </a>
+        </li>
+
+        <li class="header__top-item">
+          <a class="header__top-link" href="phone:+74959670847">
+            <div class="header__top-icon">
+
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.3335 7.33271H14.6668C14.6668 3.91271 12.0848 1.33337 8.66016 1.33337V2.66671C11.3682 2.66671 13.3335 4.62871 13.3335 7.33271Z"
+                  fill="#00aef1" />
+                <path
+                  d="M8.66685 5.33333C10.0689 5.33333 10.6669 5.93133 10.6669 7.33333H12.0002C12.0002 5.18333 10.8169 4 8.66685 4V5.33333ZM10.9482 8.962C10.8201 8.84556 10.6518 8.78347 10.4787 8.78882C10.3057 8.79417 10.1415 8.86654 10.0209 8.99066L8.42552 10.6313C8.04152 10.558 7.26952 10.3173 6.47485 9.52466C5.68019 8.72933 5.43952 7.95533 5.36819 7.574L7.00752 5.978C7.1318 5.85742 7.20428 5.69321 7.20963 5.52013C7.21498 5.34706 7.15278 5.17869 7.03619 5.05066L4.57285 2.342C4.45622 2.21357 4.29411 2.13567 4.12096 2.12484C3.94781 2.11401 3.77725 2.1711 3.64552 2.284L2.19885 3.52466C2.0836 3.64034 2.0148 3.7943 2.00552 3.95733C1.99552 4.124 1.80485 8.072 4.86619 11.1347C7.53685 13.8047 10.8822 14 11.8035 14C11.9382 14 12.0209 13.996 12.0429 13.9947C12.2059 13.9855 12.3597 13.9164 12.4749 13.8007L13.7149 12.3533C13.8278 12.2217 13.885 12.0512 13.8743 11.878C13.8636 11.7049 13.7859 11.5427 13.6575 11.426L10.9482 8.962Z"
+                  fill="#00aef1" />
+              </svg>
+            </div>
+
+            +7 (495) 967-08-47
+          </a>
+        </li>
+        <li class="header__top-item">
+          <button class="button-primary">
+            <span class="button-primary__text">Заявка на услуги</span>
+            <i class="button-primary__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8H14M14 8L7 1M14 8L7 15" stroke="#00AEF1" stroke-width="1.5" />
+              </svg>
+            </i>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- <div class="header__bottom">
+      <div class="header__bottom-left logo-block">
+        <a class="logo-block__logo logo logo--right-line-black" href="/">
+          <img class="logo__img" loading="lazy" src="img/logo.svg" width="212" height="32" alt="Логотип Cavag">
+        </a>
+      </div>
+
+      <div class="header__nav">
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Техника</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link " href="#">О компании</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Услуги</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Новости</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Клиенты</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Партнеры</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="header__search-form search-form">
+          <form class="search-form__form" action="#">
+            <input class="search-form__input" required type="text" placeholder="Поиск по сайту">
+            <button class="search-form__search-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.6">
+                  <path
+                    d="M21.0002 21L16.6572 16.657M16.6572 16.657C17.4001 15.9141 17.9894 15.0321 18.3914 14.0615C18.7935 13.0909 19.0004 12.0506 19.0004 11C19.0004 9.94936 18.7935 8.90905 18.3914 7.93842C17.9894 6.96779 17.4001 6.08585 16.6572 5.34296C15.9143 4.60007 15.0324 4.01078 14.0618 3.60874C13.0911 3.20669 12.0508 2.99976 11.0002 2.99976C9.9496 2.99976 8.90929 3.20669 7.93866 3.60874C6.96803 4.01078 6.08609 4.60007 5.34321 5.34296C3.84288 6.84329 3 8.87818 3 11C3 13.1217 3.84288 15.1566 5.34321 16.657C6.84354 18.1573 8.87842 19.0002 11.0002 19.0002C13.122 19.0002 15.1569 18.1573 16.6572 16.657Z"
+                    stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </button>
+          </form>
+
+          <button class="search-form__close-btn">
+            <div class="search-form__hamburger-lines hamburger-lines hamburger-lines--active hamburger-lines--dark">
+              <span class="hamburger-lines__line line1"></span>
+              <span class="hamburger-lines__line line2"></span>
+              <span class="hamburger-lines__line line3"></span>
+            </div>
+          </button>
+        </div>
+        <button class="header__search-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.6">
+              <path
+                d="M21.0002 21L16.6572 16.657M16.6572 16.657C17.4001 15.9141 17.9894 15.0321 18.3914 14.0615C18.7935 13.0909 19.0004 12.0506 19.0004 11C19.0004 9.94936 18.7935 8.90905 18.3914 7.93842C17.9894 6.96779 17.4001 6.08585 16.6572 5.34296C15.9143 4.60007 15.0324 4.01078 14.0618 3.60874C13.0911 3.20669 12.0508 2.99976 11.0002 2.99976C9.9496 2.99976 8.90929 3.20669 7.93866 3.60874C6.96803 4.01078 6.08609 4.60007 5.34321 5.34296C3.84288 6.84329 3 8.87818 3 11C3 13.1217 3.84288 15.1566 5.34321 16.657C6.84354 18.1573 8.87842 19.0002 11.0002 19.0002C13.122 19.0002 15.1569 18.1573 16.6572 16.657Z"
+                stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <button class="hamburger-lines hamburger-lines--mobile-menu">
+        <span class="hamburger-lines__line line1"></span>
+        <span class="hamburger-lines__line line2"></span>
+        <span class="hamburger-lines__line line3"></span>
+      </button>
+    </div> -->
 </header>

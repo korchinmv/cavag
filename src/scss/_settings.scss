@@ -5,6 +5,7 @@
 }
 
 .page {
+  overflow-x: hidden;
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
@@ -12,57 +13,187 @@
 }
 
 .page__body {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  min-width: 360px;
+  min-width: 345px;
   min-height: 100%;
-  font-size: 16px;
+  font-size: 18px;
+  overflow: hidden;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
+}
+
+main {
+  flex-grow: 1;
 }
 
 img {
   height: auto;
   max-width: 100%;
   object-fit: cover;
+  vertical-align: middle;
+}
+
+blockquote {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-.site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
-}
-
-.is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
-}
-
-.btn-reset {
+button {
   border: none;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
 }
 
-.list-reset {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.input-reset {
-  -webkit-appearance: none;
-  appearance: none;
+input {
   border: none;
-  border-radius: 0;
-  background-color: #fff;
+}
 
-  &::-webkit-search-decoration,
-  &::-webkit-search-cancel-button,
-  &::-webkit-search-results-button,
-  &::-webkit-search-results-decoration {
-    display: none;
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'RobotoRegular';
+  line-height: 1.2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.title-block {
+  font-size: 40px;
+  text-transform: uppercase;
+
+  @media screen and (width <= 1024px) {
+    font-size: 38px;
+  }
+
+  @media screen and (width <= 990px) {
+    font-size: 32px;
+  }
+
+  @media screen and (width <= 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (width <= 576px) {
+    font-size: 24px;
   }
 }
+
+.section-title {
+  font-size: 64px;
+  text-transform: uppercase;
+
+  @media screen and (width <= 1024px) {
+    font-size: 48px;
+  }
+
+  @media screen and (width <= 990px) {
+    font-size: 42px;
+  }
+
+  @media screen and (width <= 768px) {
+    font-size: 36px;
+  }
+
+  @media screen and (width <= 576px) {
+    font-size: 32px;
+  }
+}
+
+// .text-block {
+//   &__text {
+//     font-family: 'RobotoRegular';
+//     color: var(--black-text-color);
+//     opacity: 1;
+//     visibility: visible;
+//     height: 100%;
+//     transition:
+//       opacity 0.3s ease-in-out,
+//       visibility 0.5s ease-in-out,
+//       margin-bottom 0.6s ease-in-out;
+
+//     &:not(:last-child) {
+//       margin-bottom: 10px;
+//     }
+
+//     @media screen and (width <= 768px) {
+//       font-size: 16px;
+//     }
+
+//     &--bold {
+//       font-family: 'RobotoBold';
+//     }
+
+//     &--hidden {
+//       opacity: 0;
+//       visibility: hidden;
+//       overflow: hidden;
+//       height: 0;
+
+//       &:not(:last-child) {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }
+
+// .text-list {
+//   &__item {
+//     position: relative;
+//     padding-left: 28px;
+//     font-family: 'RobotoRegular';
+
+//     &:not(:last-child) {
+//       margin-bottom: 10px;
+//     }
+
+//     @media screen and (width <= 768px) {
+//       font-size: 16px;
+//     }
+
+//     &::before {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       background-color: var(--accent-color);
+//       width: 6px;
+//       height: 6px;
+//       position: absolute;
+//       top: 7px;
+//       left: 8px;
+//     }
+//   }
+// }
 
 .visually-hidden {
   position: absolute;
@@ -73,28 +204,4 @@ a {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
-}
-
-.centered {
-  text-align: center;
-}
-
-.dis-scroll {
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  overscroll-behavior: none;
-}
-
-.page--ios .dis-scroll {
-  position: relative;
 }
