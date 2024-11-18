@@ -1,0 +1,121 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: 100%;
+
+    &--margin {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__placeholder {
+    font-size: 16px;
+    font-family: 'RobotoRegular';
+    opacity: 0.6;
+    color: var(--black);
+    position: absolute;
+    top: 60%;
+    left: 16px;
+    transform: translateY(-60%);
+    transition:
+      top 0.3s ease-in-out,
+      font-size 0.3s ease-in-out;
+
+    &--small-top {
+      top: 20px;
+    }
+  }
+
+  &__input {
+    height: 39px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  &__textarea {
+    resize: none;
+    border-radius: 4px;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 21px 11px 8px;
+    width: 100%;
+    outline: transparent;
+    border: 2px solid transparent;
+    transition: border-color ease 0.3s;
+    font-size: 16px;
+    font-family: 'RobotoRegular';
+    line-height: 1.2;
+    border: 1px solid transparent;
+    outline: transparent;
+
+    &::placeholder {
+      font-size: 16px;
+      font-family: 'RobotoRegular';
+      opacity: 0.6;
+    }
+
+    // &:focus {
+    //   border-color: var(--accent-color);
+    // }
+  }
+
+  &__input:focus + .form__placeholder,
+  &__input:not(:placeholder-shown) + .form__placeholder,
+  &__textarea:focus + .form__placeholder,
+  &__textarea:not(:placeholder-shown) + .form__placeholder {
+    font-size: 12px;
+    top: 10px;
+  }
+
+  &__btn {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+
+    &--width {
+      width: calc(430px - 17px);
+      position: relative;
+      left: -17px;
+
+      @media screen and (width <= 850px) {
+        left: 0;
+        width: calc(100% - 17px);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    opacity: 0.6;
+
+    &--width {
+      max-width: 286px;
+      width: 100%;
+    }
+  }
+
+  .just-validate-error-label {
+    font-size: 12px;
+    font-family: 'RobotoRegular';
+    margin-top: 10px;
+    position: absolute;
+    bottom: -16px;
+    left: 11px;
+  }
+}

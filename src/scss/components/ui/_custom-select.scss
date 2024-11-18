@@ -1,0 +1,75 @@
+.custom-select {
+  background-color: var(--white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &--active {
+    .custom-select__arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 8px;
+    transform: translateY(-50%);
+    transition: 0.25s all ease;
+  }
+
+  //Сбрасываем стили дефолтного селекта
+  &__select {
+    cursor: pointer;
+    appearance: none;
+    display: block;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'RobotoRegular';
+    width: 100%;
+    color: var(--black);
+    padding: 10px 16px;
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  // &--sort {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   outline: transparent;
+  //   border: 1px solid var(--accent-color);
+  //   padding: 14px 0 12px 8px;
+  //   color: var(--black);
+  //   opacity: 1;
+  //   height: 43px;
+  //   transition: color 0.3s;
+
+  //   &:hover {
+  //     color: var(--accent-color);
+  //   }
+
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     right: 12px;
+  //     top: 55%;
+  //     display: block;
+  //     width: 15px;
+  //     height: 11px;
+  //     background-image: url('../../../img/svg/arrow-down.svg');
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     transition: 0.25s all ease;
+  //   }
+  // }
+}

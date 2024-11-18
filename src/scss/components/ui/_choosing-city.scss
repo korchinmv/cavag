@@ -8,6 +8,11 @@
     font-family: 'DrukMedium';
     color: var(--blue);
     margin-right: 8px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--light-blue);
+    }
   }
 
   &__mark {
@@ -24,7 +29,7 @@
     .choosing-city__arrow {
       g {
         path {
-          stroke: var(--blue);
+          stroke: var(--light-blue);
         }
       }
     }
