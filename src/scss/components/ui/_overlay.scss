@@ -4,12 +4,11 @@
     cursor: pointer;
     background-color: var(--overlay-color);
     position: fixed;
-    inset: 0;
     width: 100%;
     height: 100vh;
     opacity: 0;
     visibility: hidden;
-    z-index: 2;
+    z-index: -2;
     transition:
       opacity 0.4s,
       visibility 0.4s ease-in-out;

@@ -23,6 +23,16 @@
     font-family: 'DrukMedium';
     position: relative;
 
+    &--technic {
+      &.header-menu__item--technic__active {
+        color: var(--light-blue);
+
+        &::after {
+          transform: scale(1, 1);
+        }
+      }
+    }
+
     @media screen and (max-width: 1265px) {
       font-size: 12px;
     }
