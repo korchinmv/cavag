@@ -1,7 +1,9 @@
 const body = document?.querySelector(".page__body");
 const buttonTechnic = document?.querySelector(".header-menu__item--technic");
 const buttonSearch = document?.querySelector(".header__search-btn");
+const buttonCloseSearch = document?.querySelector(".header__close-form-btn");
 const menuTechnic = document?.querySelector(".header-technic");
+const menuSearch = document?.querySelector(".header-search");
 
 const headerMenuList = document?.querySelector(".header-menu");
 const headerSearchBtn = document?.querySelector(".header__search-btn");
@@ -40,7 +42,9 @@ export {
   body,
   buttonTechnic,
   buttonSearch,
+  buttonCloseSearch,
   menuTechnic,
+  menuSearch,
   headerMenuList,
   headerSearchBtn,
   searchFormCloseBtn,

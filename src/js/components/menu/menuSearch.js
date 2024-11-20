@@ -1,33 +1,35 @@
 import {
   buttonSearch,
-  buttonCatalog,
-  buttonServices,
+  buttonCloseSearch,
   menuSearch,
-  menuCatalog,
-  menuServices,
   body,
   overlay,
-  burger,
+  menuTechnic,
+  buttonTechnic,
 } from "../../_vars.js";
 
 if (buttonSearch) {
   buttonSearch.addEventListener("click", () => {
-    buttonSearch.classList.toggle("header__search-btn--active");
+    buttonSearch.classList.toggle("header__search-btn--hide");
+    buttonCloseSearch.classList.toggle("header__close-form-btn--active");
 
-    if (buttonSearch.classList.contains("header__search-btn--active")) {
+    if (
+      buttonCloseSearch.classList.contains("header__close-form-btn--active")
+    ) {
+      buttonCloseSearch.addEventListener("click", () => {
+        menuSearch.classList.remove("header-search--visible");
+        buttonCloseSearch.classList.remove("header__close-form-btn--active");
+        buttonSearch.classList.remove("header__search-btn--hide");
+        overlay.classList.remove("overlay--visible");
+      });
+
       menuSearch.classList.add("header-search--visible");
       overlay.classList.add("overlay--visible");
       body.classList.add("page__body--no-scroll");
 
-      if (menuCatalog.classList.contains("header-catalog--visible")) {
-        menuCatalog.classList.remove("header-catalog--visible");
-        burger.classList.remove("hamburger-lines--active");
-        buttonCatalog.classList.remove("menu__link--catalog__active");
-      }
-
-      if (menuServices.classList.contains("header-services--visible")) {
-        menuServices.classList.remove("header-services--visible");
-        buttonServices.classList.remove("menu__link--services__active");
+      if (menuTechnic.classList.contains("header-technic--visible")) {
+        menuTechnic.classList.remove("header-technic--visible");
+        buttonTechnic.classList.remove("header-menu__item--technic__active");
       }
     } else {
       menuSearch.classList.remove("header-search--visible");

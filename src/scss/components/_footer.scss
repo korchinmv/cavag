@@ -2,7 +2,7 @@
   background-color: var(--blue);
   color: var(--white);
   padding-top: 40px;
-  z-index: -3;
+  z-index: 0;
 
   @media screen and (width <= 768px) {
     border-radius: 0;
