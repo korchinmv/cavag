@@ -52,6 +52,18 @@
     }
   }
 
+  &.swiper-pagination-progressbar {
+    border-radius: 2px;
+    background-color: rgba(224, 226, 232, 1);
+    height: 2px;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--light-blue);
+    border-radius: 2px;
+    height: 2px;
+  }
+
   @keyframes countingBar {
     0% {
       width: 0;

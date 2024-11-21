@@ -1,8 +1,9 @@
 // базовые подключения
-@import '_vars', 'mixins', 'fonts', 'settings', './components/header';
+@import '_vars', 'mixins', 'fonts', 'settings';
 
 @import './components/ui/choosing-city';
 @import './components/ui/button-primary';
+@import './components/ui/button-transparent';
 @import './components/ui/menu/header-menu';
 @import './components/ui/menu/header-technic';
 @import './components/ui/menu/header-search';
@@ -15,5 +16,11 @@
 @import './components/ui/_slider-pagination';
 
 @import './components/sections/hero';
+@import './components/sections/catalog';
+@import './components/sections/about';
+@import './components/sections/partners';
 
+@import './components/elements/catalog-list';
+
+@import './components/header';
 @import './components/footer';

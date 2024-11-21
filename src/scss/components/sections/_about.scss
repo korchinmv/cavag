@@ -1,0 +1,132 @@
+.about {
+  &__wrapper {
+    padding: 80px 0;
+
+    @media screen and (width <= 768px) {
+      padding: 48px 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+
+    @media screen and (width <= 990px) {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__buttons {
+    margin-top: auto;
+    display: flex;
+    column-gap: 24px;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+
+  &__img {
+    border-radius: 16px;
+    object-fit: contain;
+
+    @media screen and (width <= 1160px) {
+      max-width: 450px;
+    }
+
+    @media screen and (width <= 990px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media screen and (width <= 990px) {
+        display: block;
+        max-width: 100%;
+        margin: 0 0 24px 0;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media screen and (width <= 990px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    border-radius: 16px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    transition: background-color 0.3s;
+
+    @media screen and (width <= 768px) {
+      padding: 12px;
+    }
+
+    &:hover {
+      background-color: var(--light-blue);
+
+      .about__item-num,
+      .about__item-decr {
+        color: var(--white);
+      }
+    }
+  }
+
+  &__item-num {
+    font-family: 'DrukMedium';
+    font-size: 48px;
+    margin-bottom: 26px;
+    color: var(--blue);
+    transition: color 0.3s;
+
+    @media screen and (width <= 1160px) {
+      font-size: 40px;
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item-descr {
+    margin-top: auto;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+      margin-top: 0;
+    }
+  }
+}

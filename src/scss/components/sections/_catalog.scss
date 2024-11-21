@@ -1,0 +1,89 @@
+.catalog {
+  padding: 80px 0 100px;
+
+  @media screen and (width <= 768px) {
+    padding: 56px 0;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    @media screen and (width <= 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (width <= 969px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @media screen and (width <= 678px) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    display: none;
+
+    @media screen and (width <= 678px) {
+      display: flex;
+    }
+  }
+
+  &__slider-list {
+    margin-bottom: 50px;
+  }
+
+  &__slider-link {
+    background-color: var(--bg-gray);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 16px 16px 0 16px;
+  }
+
+  &__slider-title {
+    font-size: 11px;
+    font-family: 'DrukMedium';
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__slider-img {
+    height: 132px;
+    object-fit: contain;
+  }
+
+  &__slider-button-primary {
+    display: none;
+    width: fit-content;
+    font-size: 12px;
+
+    @media screen and (width <= 678px) {
+      display: flex;
+    }
+  }
+
+  &__list-progressbar {
+    &.slider-pagination.swiper-pagination-progressbar {
+      max-width: 100%;
+      width: 100%;
+      position: absolute !important;
+      top: 200px !important;
+      left: 0 !important;
+    }
+  }
+}

@@ -17,9 +17,9 @@ const heroSwiper = new Swiper(".hero__slider", {
   fadeEffect: {
     crossFade: true,
   },
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
   speed: 800,
   autoplayDisableOnInteraction: false,
   navigation: {
@@ -34,6 +34,22 @@ const heroSwiper = new Swiper(".hero__slider", {
       return (
         '<span class="' + className + '">' + "<i></i>" + "<b></b>" + "</span>"
       );
+    },
+  },
+});
+
+const technicCardSwiper = new Swiper(".catalog__slider", {
+  enabled: true,
+  slidesPerView: 1.05,
+  spaceBetween: 8,
+  pagination: {
+    el: ".catalog__list-progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    678: {
+      enabled: false,
     },
   },
 });

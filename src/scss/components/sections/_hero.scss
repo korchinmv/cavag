@@ -109,6 +109,10 @@
     display: flex;
   }
 
+  &__slider {
+    z-index: 0;
+  }
+
   &__slider-controls-prev,
   &__slider-controls-next {
     position: absolute;
