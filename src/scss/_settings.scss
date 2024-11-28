@@ -109,10 +109,6 @@ input {
     top: -4px;
     left: 0;
     z-index: -1;
-
-    @media screen and (width <= 768px) {
-      display: none;
-    }
   }
 }
 
@@ -120,6 +116,7 @@ input {
   font-size: 32px;
   text-transform: uppercase;
   font-family: 'DrukMedium';
+  font-weight: 500;
 
   @media screen and (width <= 1024px) {
     font-size: 30px;
@@ -134,7 +131,7 @@ input {
   }
 
   @media screen and (width <= 576px) {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
@@ -167,6 +164,21 @@ input {
 
     @media screen and (width <= 768px) {
       font-size: 16px;
+    }
+  }
+}
+
+.text-block {
+  &__text {
+    font-size: 16px;
+    font-family: 'RobotoRegular';
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
 }

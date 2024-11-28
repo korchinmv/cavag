@@ -12,15 +12,23 @@
 @import './components/ui/custom-select';
 @import './components/ui/mobileMenu';
 @import './components/ui/overlay';
-@import './components/ui/_slider-control';
-@import './components/ui/_slider-pagination';
+@import './components/ui/slider-control';
+@import './components/ui/slider-pagination';
+@import './components/ui/breadcrumbs';
+
+@import './components/cards/technic-card';
 
 @import './components/sections/hero';
 @import './components/sections/catalog';
 @import './components/sections/about';
 @import './components/sections/partners';
+@import './components/sections/in-stock';
 
 @import './components/elements/catalog-list';
+@import './components/elements/head-page';
+@import './components/elements/seo-block';
+
+@import './components/pages/catalog';
 
 @import './components/header';
 @import './components/footer';

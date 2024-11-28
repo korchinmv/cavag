@@ -1,0 +1,122 @@
+.in-stock {
+  padding: 80px 0;
+
+  @media screen and (width <= 768px) {
+    padding: 56px 0;
+  }
+
+  .technic-card {
+    @media screen and (width <= 1200px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__button-primary {
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media screen and (width <= 768px) {
+        width: fit-content;
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__slider {
+    @media screen and (width <= 768px) {
+      padding-bottom: 26px;
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+
+    &.swiper-horizontal > .swiper-pagination-progressbar,
+    .swiper-pagination-progressbar.swiper-pagination-horizontal,
+    .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+    .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+      max-width: 100%;
+      width: 100%;
+      position: absolute !important;
+      top: 434px !important;
+      bottom: 0 !important;
+    }
+  }
+
+  &__slider-controls-prev,
+  &__slider-controls-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    @media screen and (width <= 1480px) {
+      position: static;
+      transform: translateY(0);
+    }
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__slider-controls-prev {
+    left: -133px;
+
+    @media screen and (width <= 1650px) {
+      left: -100px;
+    }
+  }
+
+  &__slider-controls-next {
+    right: -133px;
+
+    @media screen and (width <= 1650px) {
+      right: -100px;
+    }
+  }
+
+  &__pagination {
+    align-self: center;
+    display: none;
+
+    @media screen and (width <= 1480px) {
+      display: flex;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+}

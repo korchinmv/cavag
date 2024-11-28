@@ -5,25 +5,42 @@
     padding: 48px 0;
   }
 
-  &__decor {
+  &__wrapper {
     position: relative;
+
     &::before {
       content: '';
       width: 100%;
       height: 1px;
       background-color: var(--liner);
       position: absolute;
-      top: -80px;
       left: 0;
+    }
 
-      @media screen and (width <= 768px) {
-        top: -48px;
+    &--bottom-line {
+      &::before {
+        bottom: -80px;
+
+        @media screen and (width <= 768px) {
+          bottom: -48px;
+        }
+      }
+    }
+
+    &--top-line {
+      &::before {
+        top: -80px;
+
+        @media screen and (width <= 768px) {
+          top: -48px;
+        }
       }
     }
   }
 
   &__title {
     margin-bottom: 32px;
+    font-weight: 500;
 
     @media screen and (width <= 768px) {
       margin-bottom: 24px;

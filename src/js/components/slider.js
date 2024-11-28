@@ -53,3 +53,31 @@ const technicCardSwiper = new Swiper(".catalog__slider", {
     },
   },
 });
+
+const inStockSwiper = new Swiper(".in-stock__slider", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".in-stock__slider-controls-next",
+    prevEl: ".in-stock__slider-controls-prev",
+  },
+  pagination: {
+    el: ".in-stock__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    // when window width is >= 990px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
+    990: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});

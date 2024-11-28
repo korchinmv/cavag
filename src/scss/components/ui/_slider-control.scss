@@ -8,6 +8,22 @@
   justify-content: center;
   align-items: center;
 
+  &--light-blue {
+    background-color: var(--light-blue);
+
+    &:hover {
+      &.slider-control--light-blue {
+        background-color: var(--blue);
+      }
+    }
+
+    svg {
+      path {
+        stroke: var(--white);
+      }
+    }
+  }
+
   svg {
     path {
       transition: all 0.3s;
@@ -24,13 +40,7 @@
     }
   }
 
-  &--next {
-    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 80% 100%, 100% 70%);
-  }
-
   &--prev {
-    clip-path: polygon(0 30%, 20% 0, 100% 0, 100% 100%, 0% 100%);
-
     svg {
       transform: rotate(180deg);
     }
@@ -39,14 +49,11 @@
 
 .swiper-button-disabled {
   cursor: default;
-
-  &:hover {
-    background-color: var(--grey-dark-bg-color);
-  }
+  opacity: 0.5;
 
   svg {
     path {
-      stroke: var(--white-color);
+      stroke: var(--white);
     }
   }
 }
