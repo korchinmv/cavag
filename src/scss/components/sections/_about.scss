@@ -98,7 +98,8 @@
       background-color: var(--light-blue);
 
       .about__item-num,
-      .about__item-decr {
+      .about__item-decr,
+      .about__item-descr {
         color: var(--white);
       }
     }
@@ -123,6 +124,7 @@
 
   &__item-descr {
     margin-top: auto;
+    transition: color 0.3s;
 
     @media screen and (width <= 768px) {
       font-size: 14px;

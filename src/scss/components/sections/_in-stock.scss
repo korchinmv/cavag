@@ -43,6 +43,10 @@
   }
 
   &__slider {
+    @media screen and (width <= 1480px) {
+      margin-bottom: 30px;
+    }
+
     @media screen and (width <= 768px) {
       padding-bottom: 26px;
     }
@@ -71,6 +75,14 @@
       position: absolute !important;
       top: 434px !important;
       bottom: 0 !important;
+    }
+  }
+
+  &__progressbar {
+    display: none;
+
+    @media screen and (width <= 768px) {
+      display: block;
     }
   }
 

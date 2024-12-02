@@ -81,3 +81,20 @@ const inStockSwiper = new Swiper(".in-stock__slider", {
     },
   },
 });
+
+const servicesSwiper = new Swiper(".services__slider-wrapper", {
+  enabled: true,
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  pagination: {
+    el: ".services__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    768: {
+      enabled: false,
+      width: "100%",
+    },
+  },
+});
