@@ -98,3 +98,19 @@ const servicesSwiper = new Swiper(".services__slider-wrapper", {
     },
   },
 });
+
+const aboutPageHeadSwiper = new Swiper(".head-page__slider", {
+  slidesPerView: 1.3,
+  spaceBetween: 16,
+  pagination: {
+    el: ".head-page__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    768: {
+      spaceBetween: 24,
+      slidesPerView: 4,
+    },
+  },
+});

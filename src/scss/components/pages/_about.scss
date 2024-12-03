@@ -1,0 +1,254 @@
+.about-page {
+  &__head {
+    padding: 40px 0;
+    background-image: url('../img/about/head-bg.png');
+    background-repeat: no-repeat;
+    background-size: 947px 516px;
+    background-position: top right;
+
+    @media screen and (width <= 768px) {
+      padding: 24px 0 32px;
+      background-image: none;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 128px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .head-page {
+    &__title {
+      margin-bottom: 40px;
+      line-height: 1.4;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__slider-wrapper {
+      margin-bottom: 16px;
+    }
+
+    &__slider-item {
+      padding: 16px;
+      background-color: var(--white);
+      border-radius: 16px;
+      width: 292px;
+      min-height: 215px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__slider-title {
+      font-family: 'DrukMedium';
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 26px;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__slider-text {
+      font-size: 14px;
+      line-height: 140%;
+
+      @media screen and (width <= 768px) {
+        font-size: 12px;
+      }
+    }
+
+    &__progressbar {
+      width: 100%;
+      max-width: 100%;
+      position: static;
+
+      .swiper-pagination-progressbar-fill {
+        position: static;
+      }
+    }
+  }
+
+  &__content {
+    padding: 80px 0;
+
+    @media screen and (width <= 768px) {
+      padding: 32px 0 56px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (width <= 1050px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__sidemenu {
+    width: 292px;
+    flex-shrink: 0;
+    margin-right: 24px;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: var(--bg-gray);
+    align-self: flex-start;
+
+    @media screen and (width <= 1050px) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__sidemenu-item {
+    &:not(:first-child) {
+      border-top: 1px solid var(--liner);
+      width: 100%;
+      padding-top: 24px;
+
+      @media screen and (width <= 768px) {
+        padding-top: 19px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__sidemenu-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      .about-page__sidemenu-name {
+        color: var(--blue);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sidemenu-name {
+    font-family: 'DrukMedium';
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+
+    &--margin-80 {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__presentation {
+    display: flex;
+    border-radius: 32px;
+    padding: 24px;
+    margin-bottom: 32px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+      padding: 16px;
+      margin-bottom: 56px;
+    }
+  }
+
+  &__presentation-img {
+    flex-shrink: 1;
+    max-width: 434px;
+    margin-right: 24px;
+
+    @media screen and (width <= 768px) {
+      max-width: 100%;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__presentation-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__presentation-icon {
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__presentation-title {
+    font-family: 'DrukMedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin: auto 0 4px 0;
+  }
+
+  &__presentation-size {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--gray);
+    margin-bottom: 16px;
+  }
+
+  &__more-btn {
+    align-self: flex-start;
+    margin-bottom: 80px;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__title-block {
+    margin-bottom: 32px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__plan {
+    margin-bottom: 32px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__table {
+    padding: 24px;
+  }
+
+  &__table {
+    @media screen and (width <= 768px) {
+      margin-bottom: 56px;
+    }
+  }
+}

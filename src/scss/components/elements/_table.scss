@@ -1,0 +1,42 @@
+.table {
+  &__row {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+      text-align: left;
+    }
+
+    &:nth-child(even) {
+      background-color: var(--white);
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__item-name {
+    flex: 1 1 50%;
+    margin-right: 10px;
+
+    @media screen and (width <= 768px) {
+      text-align: left;
+      align-self: flex-start;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item {
+    flex: 1 1 50%;
+    font-family: 'RobotoBold';
+    font-weight: 600;
+
+    @media screen and (width <= 768px) {
+      text-align: left;
+      align-self: flex-start;
+    }
+  }
+}

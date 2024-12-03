@@ -171,6 +171,7 @@ input {
 .text-block {
   &__text {
     font-size: 16px;
+    line-height: 1.4;
     font-family: 'RobotoRegular';
 
     @media screen and (width <= 768px) {
