@@ -16,6 +16,32 @@
   padding: 0 43px;
   font-size: 14px;
 
+  &--transparent {
+    background: transparent;
+    color: var(--light-blue);
+
+    .button-primary__icon {
+      background: var(--light-blue);
+      left: 16px;
+
+      svg {
+        path {
+          stroke: var(--white);
+        }
+      }
+    }
+
+    .button-primary__text {
+      transform: translateX(12px);
+    }
+
+    &:hover {
+      & > .button-primary__text {
+        transform: translateX(12px) !important;
+      }
+    }
+  }
+
   @media screen and (width <= 768px) {
     font-size: 12px;
   }

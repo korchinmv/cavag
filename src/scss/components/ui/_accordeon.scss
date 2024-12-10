@@ -1,0 +1,146 @@
+.accordeon {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
+
+    &.open {
+      position: relative;
+
+      @media screen and (width <= 768px) {
+        padding-bottom: 10px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--black);
+        opacity: 0.1;
+        height: 2px;
+        width: 100%;
+        border-radius: 16px;
+        z-index: 1;
+        display: none;
+
+        @media screen and (width <= 768px) {
+          display: block;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--light-blue);
+        height: 2px;
+        width: 20%;
+        border-radius: 16px;
+        z-index: 2;
+        display: none;
+
+        @media screen and (width <= 768px) {
+          display: block;
+        }
+      }
+
+      .accordeon__btn {
+        padding-bottom: 11px;
+        margin-bottom: 14px;
+        color: var(--black);
+
+        @media screen and (width <= 768px) {
+          padding-bottom: 0;
+          margin-bottom: 16px;
+        }
+
+        &::before {
+          background-color: var(--black);
+
+          @media screen and (width <= 768px) {
+            display: none;
+          }
+        }
+
+        &::after {
+          background-color: var(--light-blue);
+
+          @media screen and (width <= 768px) {
+            display: none;
+          }
+        }
+      }
+
+      .accordeon__content {
+        overflow: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'DrukMedium';
+    transition: all 0.3s;
+    color: var(--gray);
+    position: relative;
+    text-align: left;
+    &:hover {
+      color: var(--light-blue);
+    }
+
+    @media screen and (width <= 1024px) {
+      font-size: 16px;
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
+      opacity: 0.1;
+      height: 2px;
+      width: 100%;
+      border-radius: 16px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
+      height: 2px;
+      width: 20%;
+      border-radius: 16px;
+      z-index: 2;
+    }
+  }
+
+  &__content {
+    max-width: 100%;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      overflow 0.3s,
+      opacity 0.4s,
+      max-height 0.3s ease-out;
+  }
+}

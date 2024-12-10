@@ -15,8 +15,10 @@
 @import './components/ui/slider-control';
 @import './components/ui/slider-pagination';
 @import './components/ui/breadcrumbs';
+@import './components/ui/accordeon';
 
 @import './components/cards/technic-card';
+@import './components/cards/news-card';
 
 @import './components/sections/hero';
 @import './components/sections/catalog';
@@ -24,6 +26,8 @@
 @import './components/sections/partners';
 @import './components/sections/in-stock';
 @import './components/sections/services';
+@import './components/sections/news';
+@import './components/sections/group';
 
 @import './components/elements/catalog-list';
 @import './components/elements/head-page';

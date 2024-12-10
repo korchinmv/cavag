@@ -114,3 +114,23 @@ const aboutPageHeadSwiper = new Swiper(".head-page__slider", {
     },
   },
 });
+
+const newsSectionSwiper = new Swiper(".news__slider-wrapper", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  pagination: {
+    el: ".news__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    1024: {
+      spaceBetween: 24,
+      slidesPerView: 3,
+    },
+    768: {
+      spaceBetween: 16,
+      slidesPerView: 2,
+    },
+  },
+});

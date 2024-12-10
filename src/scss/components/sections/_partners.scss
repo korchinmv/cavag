@@ -34,21 +34,23 @@
   &__wrapper {
     position: relative;
 
-    &::before,
-    &::after {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: var(--liner);
-      position: absolute;
-      left: 0;
-    }
-
     &--bottom-line {
       &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--liner);
+        position: absolute;
+        left: 0;
         bottom: -80px;
 
         @media screen and (width <= 768px) {
+          content: '';
+          width: 100%;
+          height: 1px;
+          background-color: var(--liner);
+          position: absolute;
+          left: 0;
           bottom: -48px;
         }
       }
