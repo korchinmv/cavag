@@ -96,7 +96,6 @@ input {
   background-color: var(--bg-gray);
   border-radius: 32px;
   position: relative;
-  margin-top: 4px;
 
   &::before {
     content: '';
@@ -109,6 +108,14 @@ input {
     top: -4px;
     left: 0;
     z-index: -1;
+  }
+
+  &--decor-none {
+    &::before {
+      @media screen and (width <= 768px) {
+        display: none;
+      }
+    }
   }
 }
 

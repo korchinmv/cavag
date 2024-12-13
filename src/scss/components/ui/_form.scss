@@ -71,7 +71,11 @@
   }
 
   &__input:focus + .form__placeholder,
-  &__input:not(:placeholder-shown) + .form__placeholder,
+  &__input:not(:placeholder-shown) + .form__placeholder {
+    font-size: 12px;
+    top: 10px;
+  }
+
   &__textarea:focus + .form__placeholder,
   &__textarea:not(:placeholder-shown) + .form__placeholder {
     font-size: 12px;

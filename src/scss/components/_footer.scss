@@ -6,6 +6,7 @@
 
   @media screen and (width <= 768px) {
     border-radius: 0;
+    padding-top: 32px;
   }
 
   &__top {
@@ -101,10 +102,6 @@
     flex-shrink: 0;
     max-width: 300px;
     width: 100%;
-
-    @media screen and (width <= 768px) {
-      order: 1;
-    }
   }
 
   &__adress,
@@ -185,24 +182,25 @@
   }
 
   &__block {
-    max-width: 300px;
     width: 100%;
 
     @media screen and (width <= 768px) {
-      padding-bottom: 24px;
-      margin-bottom: 16px;
-      position: relative;
-      max-width: 100%;
+      &:not(:last-child) {
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+        position: relative;
+        max-width: 100%;
 
-      &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.2);
-        height: 1px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.2);
+          height: 1px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 .button-transparent {
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 12px 64px 12px 24px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -8,23 +8,50 @@
   font-size: 14px;
   font-family: 'DrukMedium';
   text-transform: uppercase;
-  color: var(--light-blue);
   height: 46px;
+  position: relative;
+  overflow: hidden;
 
-  @media screen and (width <= 768px) {
-    font-size: 12px;
+  &__text {
+    color: var(--light-blue);
+    position: relative;
+    z-index: 2;
+    transition: color 0.65s;
+
+    @media screen and (width <= 768px) {
+      font-size: 12px;
+    }
   }
 
-  transition:
-    background-color 0.3s,
-    color 0.3s;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--light-blue);
+    border-radius: 40px;
+    clip-path: circle(10.2% at 89% 50%);
+    transition:
+      clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+      transform 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+      -webkit-clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
 
   &:hover {
-    background-color: var(--light-blue);
-    color: var(--white);
+    &:before {
+      clip-path: circle(100% at 70% 50%);
+    }
+
+    .button-transparent__text {
+      color: var(--white);
+    }
   }
 
   &__icon {
+    position: absolute;
+    right: 19px;
     background-color: var(--light-blue);
     display: flex;
     justify-content: center;
