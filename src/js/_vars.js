@@ -1,4 +1,4 @@
-const body = document?.querySelector(".page__body");
+const body = document?.querySelector(".page");
 const buttonTechnic = document?.querySelector(".header-menu__item--technic");
 const buttonSearch = document?.querySelector(".header__search-btn");
 const buttonCloseSearch = document?.querySelector(".header__close-form-btn");

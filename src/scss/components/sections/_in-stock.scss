@@ -46,10 +46,6 @@
     @media screen and (width <= 1480px) {
       margin-bottom: 30px;
     }
-
-    @media screen and (width <= 768px) {
-      padding-bottom: 26px;
-    }
   }
 
   &__slider-wrapper {
@@ -65,21 +61,13 @@
     @media screen and (width <= 768px) {
       margin-bottom: 32px;
     }
-
-    &.swiper-horizontal > .swiper-pagination-progressbar,
-    .swiper-pagination-progressbar.swiper-pagination-horizontal,
-    .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
-    .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-      max-width: 100%;
-      width: 100%;
-      position: absolute !important;
-      top: 434px !important;
-      bottom: 0 !important;
-    }
   }
 
   &__progressbar {
     display: none;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
 
     @media screen and (width <= 768px) {
       display: block;

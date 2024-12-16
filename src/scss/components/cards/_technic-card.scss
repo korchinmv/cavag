@@ -249,5 +249,9 @@
   &__button-primary {
     font-size: 13px;
     padding: 0 42px;
+
+    @media screen and (width <= 768px) {
+      font-size: 11px;
+    }
   }
 }

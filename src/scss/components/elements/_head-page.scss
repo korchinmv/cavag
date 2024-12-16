@@ -1,17 +1,5 @@
 .head-page {
   background-color: var(--bg-gray);
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--light-blue);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 
   &__breadcrumbs {
     margin-bottom: 85px;
