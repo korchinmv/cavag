@@ -41,6 +41,8 @@
   }
 
   &__wrapper {
+    position: relative;
+
     &--bottom-line {
       &::before {
         content: '';

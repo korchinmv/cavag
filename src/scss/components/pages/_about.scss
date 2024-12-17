@@ -251,4 +251,16 @@
       margin-bottom: 56px;
     }
   }
+
+  &__map {
+    margin-bottom: 80px;
+  }
+
+  &__nums {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 56px;
+    }
+  }
 }

@@ -134,3 +134,29 @@ const newsSectionSwiper = new Swiper(".news__slider-wrapper", {
     },
   },
 });
+
+const numsSectionSwiper = new Swiper(".nums__slider", {
+  enabled: true,
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  pagination: {
+    el: ".nums__progressbar",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".nums__slider-controls-next",
+    prevEl: ".nums__slider-controls-prev",
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+
+    1024: {
+      spaceBetween: 24,
+      slidesPerView: 3,
+    },
+    768: {
+      spaceBetween: 24,
+      slidesPerView: 2,
+    },
+  },
+});
