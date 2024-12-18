@@ -160,3 +160,40 @@ const numsSectionSwiper = new Swiper(".nums__slider", {
     },
   },
 });
+
+const groupSwiperThumbs = new Swiper(".group__swiper-thumbs", {
+  slidesPerView: "auto",
+  slideToClickedSlide: true,
+  direction: "vertical",
+  freeMode: {
+    enabled: true,
+  },
+  history: false,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  on: {
+    afterInit: function (swiper) {
+      swiper.el
+        .querySelectorAll(".slider-pagination__progress-helper")
+        .forEach((progress) => {
+          progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`;
+        });
+    },
+  },
+});
+
+const groupSwiper = new Swiper(".group__image-swiper", {
+  spaceBetween: 4,
+  loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  autoplay: {
+    delay: 3000,
+  },
+
+  thumbs: {
+    swiper: groupSwiperThumbs,
+  },
+});
