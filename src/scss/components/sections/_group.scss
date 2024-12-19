@@ -1,8 +1,10 @@
 .group {
   padding: 80px 0;
+  margin-bottom: 80px;
 
   @media screen and (width <= 768px) {
     padding: 48px 0;
+    margin-bottom: 56px;
   }
 
   &__title {

@@ -1,4 +1,5 @@
-// Подключение свайпера
+const groupSliderBtns = document.querySelectorAll(".group__accordeon-name");
+
 import Swiper from "swiper";
 import {
   Navigation,
@@ -171,15 +172,6 @@ const groupSwiperThumbs = new Swiper(".group__swiper-thumbs", {
   history: false,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
-  on: {
-    afterInit: function (swiper) {
-      swiper.el
-        .querySelectorAll(".slider-pagination__progress-helper")
-        .forEach((progress) => {
-          progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`;
-        });
-    },
-  },
 });
 
 const groupSwiper = new Swiper(".group__image-swiper", {
@@ -190,10 +182,18 @@ const groupSwiper = new Swiper(".group__image-swiper", {
     crossFade: true,
   },
   autoplay: {
-    delay: 3000,
+    delay: 9000,
   },
-
   thumbs: {
     swiper: groupSwiperThumbs,
   },
 });
+
+//остановка слайдера (гл. стр.) по клику на кнопку аккордеона
+if (groupSliderBtns) {
+  groupSliderBtns.forEach((sliderBtn) => {
+    sliderBtn.addEventListener("click", () => {
+      groupSwiper.autoplay.stop();
+    });
+  });
+}

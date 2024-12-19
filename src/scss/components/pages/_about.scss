@@ -252,15 +252,31 @@
     }
   }
 
-  &__map {
-    margin-bottom: 80px;
-  }
-
   &__nums {
     margin-bottom: 80px;
 
     @media screen and (width <= 768px) {
       margin-bottom: 56px;
     }
+  }
+
+  &__map {
+    padding: 80px 0;
+
+    @media screen and (width <= 768px) {
+      padding: 56px 0;
+    }
+  }
+
+  &__map-title {
+    margin-bottom: 32px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .ya-map {
+    height: 412px;
   }
 }
