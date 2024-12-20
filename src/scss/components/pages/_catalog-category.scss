@@ -20,6 +20,11 @@
   &__wrap {
     display: flex;
     column-gap: 24px;
+    margin-bottom: 80px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 66px;
+    }
   }
 
   &__menu {
@@ -36,7 +41,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin-bottom: 80px;
 
     @media screen and (width <= 1200px) {
       grid-template-columns: repeat(2, 1fr);

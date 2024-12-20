@@ -54,7 +54,14 @@
     align-items: center;
     font-size: 14px;
     font-family: 'RobotoRegular';
-    transition: color 0.3s;
+    transition:
+      color 0.3s,
+      text-decoration 0.3s;
+
+    &--active {
+      color: var(--light-blue);
+      text-decoration: underline;
+    }
 
     &:hover {
       color: var(--light-blue);
