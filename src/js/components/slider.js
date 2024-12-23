@@ -197,3 +197,30 @@ if (groupSliderBtns) {
     });
   });
 }
+
+const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  slideToClickedSlide: true,
+  loop: true,
+  navigation: {
+    nextEl: ".product__swiper-next",
+    prevEl: ".product__swiper-prev",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 8,
+      slidesPerView: 4,
+      direction: "vertical",
+    },
+  },
+});
+
+const productPageSwiper = new Swiper(".product__swiper", {
+  spaceBetween: 4,
+  loop: true,
+  thumbs: {
+    swiper: productPageSwiperThumbs,
+  },
+});

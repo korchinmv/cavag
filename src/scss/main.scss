@@ -17,6 +17,7 @@
 @import './components/ui/breadcrumbs';
 @import './components/ui/accordeon';
 @import './components/ui/aside-menu';
+@import './components/ui/tabs';
 
 @import './components/cards/technic-card';
 @import './components/cards/news-card';
@@ -37,11 +38,14 @@
 @import './components/elements/table';
 @import './components/elements/carousel';
 @import './components/elements/subcategory-list';
+@import './components/elements/flag';
+@import './components/elements/product-info';
 
 @import './components/pages/catalog';
 @import './components/pages/catalog-category';
 @import './components/pages/catalog-subcategory';
 @import './components/pages/about';
+@import './components/pages/product';
 
 @import './components/header';
 @import './components/footer';

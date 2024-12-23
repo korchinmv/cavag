@@ -1,0 +1,147 @@
+.tabs {
+  font-family: 'OswaldBold';
+
+  &__nav {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+      display: none; /*Safari and Chrome*/
+    }
+  }
+
+  &__head {
+    padding-bottom: 16px;
+    position: relative;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__nav-item {
+    flex: 0 0 auto;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @media screen and (width <= 768px) {
+        margin-right: 24px;
+      }
+    }
+
+    &--active {
+      position: relative;
+
+      .tabs__nav-btn {
+        color: var(--light-blue);
+      }
+
+      &::after {
+        @media screen and (width <= 768px) {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__nav-btn {
+    font-family: 'DrukMedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.9;
+    text-transform: uppercase;
+    transition: color ease 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__underline {
+    display: block;
+    background: var(--light-blue);
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    z-index: 2;
+    transition:
+      left 0.3s ease,
+      width 0.3s ease;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      svg {
+        flex-shrink: 0;
+
+        @media screen and (width <= 768px) {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__content-wrap {
+    display: flex;
+    padding: 60px 0 80px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (width <= 768px) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__content-inner {
+    .text-block {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

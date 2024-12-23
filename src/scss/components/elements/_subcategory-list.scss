@@ -22,14 +22,6 @@
   }
 
   &__flag {
-    border-radius: 25px;
-    padding: 3px 16px;
-    background-color: var(--green);
-    color: var(--white);
-    font-weight: 500;
-    font-family: 'RobotoMedium';
-    font-size: 12px;
-    line-height: 1.3;
     align-self: flex-start;
   }
 
@@ -64,29 +56,6 @@
 
   &__info {
     margin-bottom: 16px;
-  }
-
-  &__info-item {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 1.9;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--liner);
-
-    &:not(:last-child) {
-      margin-bottom: 4px;
-    }
-  }
-
-  &__info-name {
-    margin-right: 10px;
-    color: var(--gray);
-  }
-
-  &__info-meaning {
-    font-weight: 600;
-    font-family: 'RobotoBold';
   }
 
   &__btns {
