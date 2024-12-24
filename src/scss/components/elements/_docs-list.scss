@@ -1,0 +1,43 @@
+.docs-list {
+  &__item {
+    background-color: var(--bg-gray);
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__name {
+    font-family: 'RobotoBold';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  &__download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    path {
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      path {
+        stroke: var(--blue);
+      }
+    }
+  }
+}

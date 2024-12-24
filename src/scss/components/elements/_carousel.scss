@@ -7,8 +7,14 @@
 
   &__items {
     will-change: transform;
-    animation: scrolling 10s linear infinite;
+    animation: scrolling 20s linear infinite;
     flex: 0 0 100%;
+
+    @media screen and (width <= 768px) {
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
   }
 }
 

@@ -1,0 +1,126 @@
+.service-list {
+  &__link {
+    background-color: var(--bg-gray);
+    display: block;
+    border-radius: 16px;
+    padding: 24px 24px 108px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s;
+    position: relative;
+
+    @media screen and (width <= 768px) {
+      padding: 16px;
+    }
+
+    &:hover {
+      background-color: var(--light-blue);
+
+      .service-list__text,
+      .service-list__title {
+        color: var(--white);
+      }
+
+      .service-list__decor {
+        clip-path: circle(50% at 50% 50%);
+
+        svg {
+          transform: translate(0px, 0px);
+        }
+      }
+
+      .service-list__more {
+        color: var(--white);
+      }
+    }
+  }
+
+  &__item-head {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__icon-wrap {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'DrukMedium';
+    max-width: 155px;
+    transition: color 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__text {
+    font-family: 'RobotoRegular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: color 0.3s;
+    margin-top: auto;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 24px;
+    bottom: 24px;
+    clip-path: circle(0 at 50% 50%);
+    transition: clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+
+      path {
+        stroke: var(--light-blue);
+      }
+      transform: translate(-30px, 30px);
+      transition: transform 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+  }
+
+  &__more {
+    color: var(--light-blue);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'DrukMedium';
+    align-self: flex-start;
+    display: none;
+    transition: color 0.3s;
+
+    @media screen and (width <= 768px) {
+      display: block;
+    }
+  }
+}

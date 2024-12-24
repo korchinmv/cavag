@@ -47,7 +47,9 @@
   &__image {
     align-self: flex-start;
     border-radius: 16px;
-    max-width: 608px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
 
     @media screen and (width <= 1200px) {
       max-width: 500px;

@@ -18,9 +18,9 @@ const heroSwiper = new Swiper(".hero__slider", {
   fadeEffect: {
     crossFade: true,
   },
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   speed: 800,
   autoplayDisableOnInteraction: false,
   navigation: {
@@ -182,7 +182,7 @@ const groupSwiper = new Swiper(".group__image-swiper", {
     crossFade: true,
   },
   autoplay: {
-    delay: 9000,
+    delay: 12000,
   },
   thumbs: {
     swiper: groupSwiperThumbs,
@@ -199,10 +199,7 @@ if (groupSliderBtns) {
 }
 
 const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
-  spaceBetween: 4,
-  slidesPerView: 4,
-  slideToClickedSlide: true,
-  loop: true,
+  enabled: false,
   navigation: {
     nextEl: ".product__swiper-next",
     prevEl: ".product__swiper-prev",
@@ -210,6 +207,7 @@ const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
   breakpoints: {
     // when window width is >= 768px
     768: {
+      enabled: true,
       spaceBetween: 8,
       slidesPerView: 4,
       direction: "vertical",
@@ -222,5 +220,15 @@ const productPageSwiper = new Swiper(".product__swiper", {
   loop: true,
   thumbs: {
     swiper: productPageSwiperThumbs,
+  },
+  pagination: {
+    el: ".product__pagination",
+    clickable: true,
+    type: "bullets",
+    renderBullet: function (index, className) {
+      return (
+        '<span class="' + className + '">' + "<i></i>" + "<b></b>" + "</span>"
+      );
+    },
   },
 });

@@ -21,11 +21,12 @@ if (buttonSearch) {
         buttonCloseSearch.classList.remove("header__close-form-btn--active");
         buttonSearch.classList.remove("header__search-btn--hide");
         overlay.classList.remove("overlay--visible");
+        body.classList.remove("page--no-scroll");
       });
 
       menuSearch.classList.add("header-search--visible");
       overlay.classList.add("overlay--visible");
-      body.classList.add("page__body--no-scroll");
+      body.classList.add("page--no-scroll");
 
       if (menuTechnic.classList.contains("header-technic--visible")) {
         menuTechnic.classList.remove("header-technic--visible");
@@ -33,7 +34,7 @@ if (buttonSearch) {
       }
     } else {
       menuSearch.classList.remove("header-search--visible");
-      body.classList.remove("page__body--no-scroll");
+      body.classList.remove("page--no-scroll");
       overlay.classList.remove("overlay--visible");
     }
   });

@@ -13,6 +13,10 @@
       background-color: var(--white);
     }
 
+    &:nth-child(odd) {
+      background-color: var(--bg-gray);
+    }
+
     @media screen and (width <= 768px) {
       font-size: 14px;
     }
@@ -21,6 +25,7 @@
   &__item-name {
     flex: 1 1 50%;
     margin-right: 10px;
+    font-family: 'RobotoRegular';
 
     @media screen and (width <= 768px) {
       text-align: left;

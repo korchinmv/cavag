@@ -18,11 +18,6 @@
   &__head {
     padding-bottom: 16px;
     position: relative;
-
-    @media screen and (width <= 768px) {
-      margin-bottom: 24px;
-      padding-bottom: 0;
-    }
   }
 
   &__nav-item {
@@ -61,7 +56,7 @@
     transition: color ease 0.3s;
 
     @media screen and (width <= 768px) {
-      font-size: 18px;
+      font-size: 12px;
     }
   }
 
@@ -71,14 +66,10 @@
     position: absolute;
     bottom: 0;
     height: 2px;
-    z-index: 2;
+    z-index: 1;
     transition:
       left 0.3s ease,
       width 0.3s ease;
-
-    @media screen and (width <= 768px) {
-      display: none;
-    }
   }
 
   &__item {
@@ -133,14 +124,6 @@
     @media screen and (width <= 768px) {
       &:not(:last-child) {
         margin-bottom: 32px;
-      }
-    }
-  }
-
-  &__content-inner {
-    .text-block {
-      &:not(:last-child) {
-        margin-bottom: 40px;
       }
     }
   }

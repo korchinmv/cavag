@@ -90,10 +90,6 @@
   &__item {
     width: 150px;
 
-    &:not(:last-child) {
-      margin-right: 70;
-    }
-
     &--mobile {
       @media screen and (width <= 980px) {
         display: none;
