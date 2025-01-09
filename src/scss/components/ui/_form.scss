@@ -17,7 +17,7 @@
     width: 100%;
 
     &--margin {
-      margin-bottom: 8px;
+      margin-bottom: 14px;
     }
   }
 
@@ -27,9 +27,9 @@
     opacity: 0.6;
     color: var(--black);
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 16px;
-    transform: translateY(-60%);
+    transform: translateY(-50%);
     transition:
       top 0.3s ease-in-out,
       font-size 0.3s ease-in-out;
@@ -110,12 +110,121 @@
     }
   }
 
-  .just-validate-error-label {
+  &__dwd-file {
+    padding: 16px;
+    background-color: var(--bg-gray);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__dwd-file-left {
+    display: flex;
+  }
+
+  &__dwd-file-icon {
+    margin-right: 8px;
+  }
+
+  &__dwd-file-name {
+    display: block;
+    font-weight: 500;
+    font-family: 'RobotoMedium';
+    line-height: 1;
+  }
+
+  &__dwd-file-descr {
     font-size: 12px;
     font-family: 'RobotoRegular';
-    margin-top: 10px;
+    opacity: 0.6;
+    line-height: 1;
+  }
+
+  &__dwd-file-delete {
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .input-file {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &__text {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      text-decoration: none;
+      font-weight: 500;
+      font-family: 'RobotoMedium';
+      vertical-align: middle;
+      color: var(--light-blue);
+      text-align: center;
+      text-decoration: underline;
+
+      @media screen and (width <= 768px) {
+        font-size: 16px;
+      }
+    }
+
+    &__input[type='file'] {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+
+    &__icon {
+      margin-right: 8px;
+    }
+  }
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__policy {
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 14px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__policy-link {
+    color: var(--light-blue);
+    text-decoration: underline;
+  }
+
+  .iti__selected-country-primary {
+    padding-left: 17px;
+  }
+
+  .just-validate-error-label {
+    font-size: 11px;
+    font-family: 'RobotoRegular';
     position: absolute;
-    bottom: -16px;
-    left: 11px;
+    bottom: -14px;
+    left: 10px;
   }
 }

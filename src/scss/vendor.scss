@@ -3,8 +3,10 @@
 // стили для свайпера
 @import '../../node_modules/swiper/swiper-bundle.min';
 // стили для модального окна
-// @import "../../node_modules/graph-modal/dist/graph-modal.min";
+@import '../../node_modules/graph-modal/dist/graph-modal.min';
 
+//стили для Флагов в инпуте
+@import '../../node_modules/intl-tel-input/build/css/intlTelInput.min';
 // стили для табов
 // @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
 

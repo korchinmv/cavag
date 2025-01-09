@@ -247,3 +247,14 @@ input {
 .rounded-top {
   border-radius: 32px 32px 0 0;
 }
+
+.iti {
+  --iti-path-flags-1x: url('../img/flags/flags.webp');
+  --iti-path-flags-2x: url('/flags/flags@2x.webp');
+  --iti-path-globe-1x: url('path/to/globe.webp');
+  --iti-path-globe-2x: url('path/to/globe@2x.webp');
+}
+
+.iti {
+  width: 100%;
+}

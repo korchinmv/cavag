@@ -60,6 +60,7 @@
     "graph-modal": "^1.0.7",
     "graph-tabs": "^1.0.2",
     "inputmask": "^5.0.8",
+    "intl-tel-input": "^25.2.0",
     "just-validate": "^4.3.0",
     "rellax": "^1.12.1",
     "sass": "^1.80.6",
