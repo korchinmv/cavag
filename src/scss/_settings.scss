@@ -5,15 +5,10 @@
 }
 
 .page {
-  overflow-x: hidden;
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-
-  &--no-scroll {
-    overflow: hidden;
-  }
 }
 
 .page__body {
@@ -24,7 +19,11 @@
   min-width: 345px;
   min-height: 100%;
   font-size: 18px;
-  overflow: hidden;
+  overflow-x: hidden;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
 }
 
 main {

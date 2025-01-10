@@ -4,6 +4,8 @@ import "./components/slider.js";
 import "./components/form.js";
 import "./components/asideMenu.js";
 import "./components/accordeon.js";
+import "./components/select-menu.js";
+import "./components/chooseCityPopup.js";
 import "./components/map.js";
 import "./components/tabs.js";
 import "./components/menu/mobileMenu.js";

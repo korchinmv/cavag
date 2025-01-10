@@ -7,7 +7,6 @@
   font-family: 'DrukMedium';
   color: var(--white);
   line-height: normal;
-  padding: 0 0;
   border: none;
   background: var(--light-blue);
   border-radius: 62px;
@@ -32,7 +31,7 @@
     }
 
     .button-primary__text {
-      transform: translateX(12px);
+      transform: translateX(-43px);
     }
 
     &:hover {
@@ -62,12 +61,16 @@
 
   &__text {
     position: relative;
-    z-index: 2;
     display: flex;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: transform 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transform: translateX(0);
+    z-index: 2;
+
+    &--bg-white {
+      background-color: var(--white);
+    }
   }
 
   &__icon {
@@ -82,6 +85,7 @@
     border-radius: 100%;
     clip-path: circle(0 at 50% 50%);
     transition: clip-path 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
   }
 
   svg {

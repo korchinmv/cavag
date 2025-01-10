@@ -37,10 +37,10 @@ if (burgerButton) {
 
     if (mobileMenu.classList.contains("mobile-menu--active")) {
       overlay.classList.add("overlay--visible");
-      body.classList.add("page--no-scroll");
+      body.classList.add("page__body--no-scroll");
     } else {
       overlay.classList.remove("overlay--visible");
-      body.classList.remove("page--no-scroll");
+      body.classList.remove("page__body--no-scroll");
     }
   });
 }

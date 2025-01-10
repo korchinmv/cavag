@@ -19,7 +19,7 @@ overlay.addEventListener("click", () => {
     buttonCloseSearch.classList.remove("header__close-form-btn--active");
     menuTechnic.classList.remove("header-technic--visible");
     overlay.classList.remove("overlay--visible");
-    body.classList.remove("page--no-scroll");
+    body.classList.remove("page__body--no-scroll");
 
     //Скрываем моб. меню по клику на оверлей
     mobileMenu.classList.remove("mobile-menu--active");

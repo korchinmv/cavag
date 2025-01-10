@@ -1,0 +1,76 @@
+.select-menu {
+  font-family: 'RobotoMedium';
+  font-size: 16px;
+  position: relative;
+
+  &--active {
+    .select-menu__arrow {
+      transform: rotate(180deg);
+    }
+
+    & > .select-menu__options {
+      display: block;
+    }
+  }
+
+  &__btn-wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color ease 0.2s;
+
+    svg {
+      transition: all ease 0.2s;
+      path {
+        transition: all ease 0.2s;
+      }
+    }
+  }
+
+  &__calendar {
+    margin-right: 8px;
+    margin-bottom: 4px;
+    opacity: 0.6;
+  }
+
+  &__arrow {
+    &:hover {
+      path {
+        stroke: var(--light-blue);
+      }
+    }
+  }
+
+  &__btn {
+    margin-right: 16px;
+    color: var(--black);
+  }
+
+  &__options {
+    display: none;
+    background-color: var(--white);
+    padding: 16px;
+    position: absolute;
+    margin-top: 8px;
+    left: 0;
+    width: 205px;
+
+    &--grey {
+      background-color: var(--gray);
+      z-index: 3;
+    }
+  }
+
+  &__option {
+    cursor: pointer;
+    transition: color ease 0.2s;
+
+    &:hover {
+      color: var(--light-blue);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
