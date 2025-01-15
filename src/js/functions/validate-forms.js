@@ -17,16 +17,25 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
   }
 
   if (telSelector) {
-    const inputMask = new Inputmask({
-      mask: "+7 (999) 999-99-99",
-      showMaskOnHover: false,
-    });
+    if (telSelector.getAttribute("data-no-flag") === null) {
+      const inputMask = new Inputmask({
+        mask: "+7 (999) 999-99-99",
+        showMaskOnHover: false,
+      });
 
-    inputMask.mask(telSelector);
+      inputMask.mask(telSelector);
 
-    intlTelInput(telSelector, {
-      initialCountry: "ru",
-    });
+      intlTelInput(telSelector, {
+        initialCountry: "ru",
+      });
+    } else {
+      const inputMask = new Inputmask({
+        mask: "+7 (999) 999-99-99",
+        showMaskOnHover: false,
+      });
+
+      inputMask.mask(telSelector);
+    }
 
     for (let item of rules) {
       if (item.tel) {

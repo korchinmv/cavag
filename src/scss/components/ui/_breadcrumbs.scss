@@ -9,14 +9,14 @@
   &__list {
     display: inline-flex;
     flex-wrap: wrap;
-    overflow-x: auto;
+    // overflow-x: auto;
   }
 
   &__item {
     color: var(--gray);
     opacity: 0.7;
     position: relative;
-    flex-shrink: 0;
+    // flex-shrink: 0;
     transition: color 0.3s ease;
 
     &:hover {
@@ -40,8 +40,8 @@
 
     &--active {
       opacity: 1;
-      white-space: nowrap;
-      overflow: hidden;
+      // white-space: nowrap;
+      // overflow: hidden;
       text-overflow: ellipsis;
 
       &:hover {

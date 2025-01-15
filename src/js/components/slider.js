@@ -232,3 +232,41 @@ const productPageSwiper = new Swiper(".product__swiper", {
     },
   },
 });
+
+//Слайдер на страницы статьи новости
+const newsArticleSwiperThumbs = new Swiper(".swiper-news-article-thumbs", {
+  enabled: false,
+  spaceBetween: 4,
+  slidesPerView: 5,
+  loop: true,
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      enabled: true,
+      spaceBetween: 8,
+    },
+  },
+});
+
+const newsArticleSwiper = new Swiper(".swiper-news-article", {
+  spaceBetween: 4,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-news-article-next",
+    prevEl: ".swiper-news-article-prev",
+  },
+  pagination: {
+    el: ".swiper-news-article__pagination",
+    clickable: true,
+    type: "bullets",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 8,
+    },
+  },
+  thumbs: {
+    swiper: newsArticleSwiperThumbs,
+  },
+});

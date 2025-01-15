@@ -86,20 +86,6 @@ const rulesRequestForServicesForm = [
     ],
   },
   {
-    ruleSelector: ".input-company",
-    rules: [
-      {
-        rule: "minLength",
-        value: 1,
-      },
-      {
-        rule: "required",
-        value: true,
-        errorMessage: "Заполните название компании!",
-      },
-    ],
-  },
-  {
     ruleSelector: ".input-tel",
     tel: true,
     telError: "Введите корректный телефон",
@@ -188,3 +174,4 @@ validateForms(
 validateForms("#callback-form", rulesCallbackForm, afterForm);
 validateForms("#request-kp-form", rulesRequestForServicesForm, afterForm);
 validateForms("#write-us-form", rulesRequestForServicesForm, afterForm);
+validateForms("#contacts-page-form", rulesFooterForm, afterForm);
