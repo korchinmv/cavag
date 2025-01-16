@@ -1,11 +1,21 @@
 .contacts {
   &__head {
     padding: 40px 0;
+
+    @media screen and (width <= 768px) {
+      padding-top: 24px;
+    }
   }
+
   &__head-wrapper {
     display: flex;
     justify-content: space-between;
   }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
   &__head-text {
     display: flex;
     flex-direction: column;
@@ -15,6 +25,10 @@
   }
 
   &__form {
+    @media screen and (width <= 1024px) {
+      display: none;
+    }
+
     .form__block {
       column-gap: 8px;
       margin-bottom: 15px;
@@ -50,15 +64,28 @@
 
   &__wrapper {
     padding: 80px 0;
+
+    @media screen and (width <= 1024px) {
+      padding: 48px 0;
+    }
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (width <= 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
     max-width: 608px;
+
+    @media screen and (width <= 1024px) {
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
   }
 
   &__info-item {
@@ -90,6 +117,11 @@
     flex-shrink: 0;
     align-self: flex-start;
 
+    @media screen and (width <= 768px) {
+      width: 32px;
+      height: 32px;
+    }
+
     &--bg-white {
       background-color: var(--white);
     }
@@ -116,6 +148,14 @@
     }
   }
 
+  &__info-link,
+  &__info-adress,
+  &__info-time {
+    @media screen and (width <= 768px) {
+      font-size: 13px;
+    }
+  }
+
   &__info-links-wrap {
     display: flex;
     flex-direction: column;
@@ -124,6 +164,11 @@
 
   &__map {
     border-radius: 16px;
+
+    @media screen and (width <= 1024px) {
+      width: 100%;
+      height: 285px;
+    }
   }
 
   &__subtitle {
@@ -132,10 +177,19 @@
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
   }
 
   .container--large {
     margin-bottom: 80px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 48px;
+    }
   }
 
   .text-block {
@@ -148,6 +202,10 @@
     position: relative;
     padding-bottom: 80px;
 
+    @media screen and (width <= 768px) {
+      padding-bottom: 48px;
+    }
+
     &::after {
       content: '';
       width: 100%;
@@ -156,6 +214,14 @@
       position: absolute;
       left: 0;
       bottom: 0;
+    }
+  }
+
+  &__content {
+    margin-right: 15px;
+
+    @media screen and (width <= 1024px) {
+      margin: 0 0 24px;
     }
   }
 }

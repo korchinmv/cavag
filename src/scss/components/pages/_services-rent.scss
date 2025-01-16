@@ -1,0 +1,79 @@
+.services-rent-page {
+  &__head {
+    background-image: url(../img/services-rent/head-img.png);
+    background-repeat: no-repeat;
+    background-size: 868px 350px;
+    background-position: 51vw;
+    padding: 40px 0;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 1024px) {
+      background-image: none;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+      padding: 24px 0 32px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 80px;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+      margin: 0 0 56px 0;
+    }
+  }
+
+  &__content {
+    max-width: 924px;
+    width: 100%;
+    margin-right: 24px;
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__img {
+    border-radius: 16px;
+    margin-bottom: 40px;
+  }
+
+  .container--large {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  .text-block {
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  &__aside-title {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'DrukMedium';
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__aside-menu-links {
+    flex-shrink: 0;
+  }
+}

@@ -23,6 +23,7 @@
 
 @import './components/cards/technic-card';
 @import './components/cards/news-card';
+@import './components/cards/service-card';
 
 @import './components/sections/hero';
 @import './components/sections/catalog';
@@ -33,6 +34,7 @@
 @import './components/sections/news';
 @import './components/sections/group';
 @import './components/sections/nums';
+@import './components/sections/seo-text';
 
 @import './components/elements/catalog-list';
 @import './components/elements/head-page';
@@ -45,6 +47,7 @@
 @import './components/elements/service-list';
 @import './components/elements/docs-list';
 @import './components/elements/popup';
+@import './components/elements/aside-menu-links';
 
 @import './components/pages/catalog';
 @import './components/pages/catalog-category';
@@ -54,6 +57,8 @@
 @import './components/pages/news';
 @import './components/pages/news-article';
 @import './components/pages/contacts';
+@import './components/pages/services';
+@import './components/pages/services-rent';
 
 @import './components/header';
 @import './components/footer';
