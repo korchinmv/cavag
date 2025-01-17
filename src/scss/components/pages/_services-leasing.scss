@@ -1,0 +1,142 @@
+.services-leasing-page {
+  &__head {
+    background-image: url(../img/services-leasing/head-img.png);
+    background-repeat: no-repeat;
+    background-size: 868px 350px;
+    background-position: 51vw;
+    min-height: 350px;
+    padding: 40px 0;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 1024px) {
+      min-height: auto;
+    }
+
+    @media screen and (width <= 1024px) {
+      background-image: none;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+      padding: 24px 0 32px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 80px;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+      margin: 0 0 56px 0;
+    }
+  }
+
+  &__content {
+    max-width: 924px;
+    width: 100%;
+    margin-right: 24px;
+
+    @media screen and (width <= 990px) {
+      margin: 0 0 56px 0;
+    }
+  }
+
+  &__img {
+    border-radius: 16px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .container--large {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__aside-title {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'DrukMedium';
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__aside-menu-links {
+    flex-shrink: 0;
+  }
+
+  .text-block {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__company-item {
+    background-color: var(--bg-gray);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    .text-block {
+      margin-bottom: 0;
+    }
+  }
+
+  &__company-img {
+    width: 260px;
+    border-radius: 4px;
+    margin-right: 24px;
+    object-fit: contain;
+
+    @media screen and (width <= 768px) {
+      margin: 0 auto 24px auto;
+    }
+
+    @media screen and (width <= 480px) {
+      width: 100%;
+    }
+  }
+
+  &__company-title {
+    font-family: 'DrukMedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__company-text {
+    .text-block__text {
+      font-size: 14px;
+    }
+  }
+}

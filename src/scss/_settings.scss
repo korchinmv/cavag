@@ -9,6 +9,7 @@
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .page__body {
@@ -18,7 +19,7 @@
   margin: 0;
   min-width: 345px;
   min-height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   overflow-x: hidden;
 
   &--no-scroll {
@@ -163,18 +164,6 @@ input {
 }
 
 .text-block {
-  &__text {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-
-    @media screen and (width <= 768px) {
-      font-size: 16px;
-    }
-  }
-}
-
-.text-block {
   &__title {
     font-family: 'DrukMedium';
     font-weight: 500;
@@ -200,6 +189,30 @@ input {
 
     &:not(:last-child) {
       margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'RobotoRegular';
+    position: relative;
+    padding-left: 32px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: var(--light-blue);
+      border-radius: 50%;
+      position: absolute;
+      left: 9px;
+      top: 7px;
     }
   }
 }

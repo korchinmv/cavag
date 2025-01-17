@@ -36,7 +36,7 @@
   }
 
   &__slider-link {
-    display: block;
+    min-height: 250px;
     background-color: var(--white);
     border-radius: 16px;
     padding: 24px 24px 108px 24px;
@@ -126,6 +126,7 @@
     transition: color 0.3s;
     margin-bottom: 38px;
     margin-top: auto;
+    flex-grow: 1;
 
     @media screen and (width <= 768px) {
       font-size: 14px;

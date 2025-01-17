@@ -100,18 +100,13 @@
           <label class="form__placeholder" for="email">Эл. почта</label>
         </div>
 
-        <div class="form__input-wrapper form__input-wrapper--margin custom-select custom-select--sort">
-          <select class="custom-select__select" id="sort-select" name="sort-select">
-            <option class="custom-select__option" selected="selected" value="0">Тема обращения</option>
-            <option class="custom-select__option" value="1">Тема1</option>
-            <option class="custom-select__option" value="2">Тема2</option>
-          </select>
-
-          <svg class="custom-select__arrow" width="16" height="9" viewBox="0 0 16 9" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 2L8 8L2 2" stroke="#00AEF1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-          </svg>
-
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="request-for-services-company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder form__placeholder--centered"
+              for="request-for-services-company">Компания</label>
+          </div>
         </div>
 
         <div class="form__input-wrapper form__input-wrapper--margin">
