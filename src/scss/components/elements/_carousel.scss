@@ -1,5 +1,6 @@
 .carousel {
   display: flex;
+  column-gap: 60px;
   position: relative;
   > * {
     flex: 0 0 100%;
@@ -7,8 +8,9 @@
 
   &__items {
     will-change: transform;
-    animation: scrolling 20s linear infinite;
+    animation: scrolling 40s linear infinite;
     flex: 0 0 100%;
+    column-gap: 60px;
 
     @media screen and (width <= 768px) {
       &:not(:last-child) {

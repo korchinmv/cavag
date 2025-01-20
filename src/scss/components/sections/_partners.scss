@@ -9,11 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
-
-    @media screen and (width <= 768px) {
-      margin-bottom: 14px;
-    }
+    margin-bottom: 46px;
   }
 
   &__button-primary {
@@ -33,11 +29,6 @@
 
   &__title {
     font-weight: 500;
-    margin-bottom: 32px;
-
-    @media screen and (width <= 768px) {
-      margin-bottom: 24px;
-    }
   }
 
   &__wrapper {
@@ -89,7 +80,7 @@
 
     @media screen and (width <= 768px) {
       column-gap: 12px;
-      margin-bottom: 24px;
+      margin-bottom: 54px;
     }
   }
 
