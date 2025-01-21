@@ -17,18 +17,18 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
   }
 
   if (telSelector) {
-    if (telSelector.getAttribute("data-no-flag") === null) {
+    if (telSelector.getAttribute("data-no-flag") !== null) {
       const inputMask = new Inputmask({
         mask: "+7 (999) 999-99-99",
         showMaskOnHover: false,
       });
 
       inputMask.mask(telSelector);
-
+    } else {
       intlTelInput(telSelector, {
         initialCountry: "ru",
       });
-    } else {
+
       const inputMask = new Inputmask({
         mask: "+7 (999) 999-99-99",
         showMaskOnHover: false,

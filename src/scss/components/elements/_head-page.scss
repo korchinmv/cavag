@@ -45,6 +45,11 @@
     flex-direction: column;
     height: 270px;
 
+    &--news {
+      flex-direction: row;
+      height: auto;
+    }
+
     @media screen and (width <= 1024px) {
       height: auto;
     }

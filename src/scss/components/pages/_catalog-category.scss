@@ -41,6 +41,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    align-self: self-start;
 
     @media screen and (width <= 1200px) {
       grid-template-columns: repeat(2, 1fr);

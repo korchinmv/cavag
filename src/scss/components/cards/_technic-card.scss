@@ -16,82 +16,6 @@
     }
   }
 
-  // &--horizontal {
-  //   background-color: var(--grey-light-bg-color);
-  //   flex-direction: row;
-  //   max-width: 100%;
-
-  //   @media screen and (width <= 768px) {
-  //     flex-direction: column;
-  //   }
-
-  //   .technic-card__img {
-  //     margin-right: 32px;
-  //     margin-bottom: 0;
-
-  //     @media screen and (width <= 768px) {
-  //       margin-right: 0;
-  //     }
-  //   }
-
-  //   .technic-card__content {
-  //     width: 100%;
-  //   }
-
-  //   .technic-card__price {
-  //     margin-bottom: 0;
-  //     margin-right: 10px;
-
-  //     @media screen and (width <= 768px) {
-  //       margin-right: 0;
-  //       margin-bottom: 16px;
-  //     }
-  //   }
-
-  //   .technic-card__bot {
-  //     width: 258px;
-
-  //     @media screen and (width <= 768px) {
-  //       width: 100%;
-  //     }
-  //   }
-
-  //   .technic-card__bts-wrapper {
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: space-between;
-
-  //     @media screen and (width <= 768px) {
-  //       flex-direction: column;
-  //       align-items: flex-start;
-  //     }
-  //   }
-
-  //   .technic-card__slider {
-  //     flex-shrink: 0;
-  //     width: 262px;
-  //     margin-right: 10px;
-  //     z-index: 1;
-
-  //     @media screen and (width <= 768px) {
-  //       display: none;
-  //     }
-  //   }
-
-  //   .swiper-wrapper {
-  //     margin-bottom: 10px;
-  //   }
-
-  //   .technic-card__pagination {
-  //     position: relative;
-  //     top: -13px;
-
-  //     .swiper-pagination-bullet {
-  //       width: 40px;
-  //     }
-  //   }
-  // }
-
   &__badge {
     position: absolute;
     display: flex;
@@ -247,7 +171,7 @@
   }
 
   &__button-primary {
-    font-size: 13px;
+    font-size: 12px;
     padding: 0 42px;
 
     @media screen and (width <= 768px) {
