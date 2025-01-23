@@ -47,6 +47,10 @@
       display: flex;
       flex-direction: column;
       align-items: stretch;
+
+      &.swiper-slide {
+        height: auto;
+      }
     }
 
     &__slider-title {
@@ -244,11 +248,13 @@
 
   &__table {
     padding: 24px;
-  }
 
-  &__table {
     @media screen and (width <= 768px) {
       margin-bottom: 56px;
+      padding: 16px;
+    }
+    .table__row {
+      padding: 16px 8px;
     }
   }
 
@@ -278,5 +284,11 @@
 
   .ya-map {
     height: 412px;
+  }
+
+  .partners__wrapper--top-line::after {
+    @media screen and (width <= 768px) {
+      top: -94px;
+    }
   }
 }

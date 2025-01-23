@@ -36,21 +36,6 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 8px;
       margin-bottom: 56px;
-
-      .catalog-list__link {
-        height: 180px;
-      }
-
-      .catalog-list__title {
-        font-size: 10px;
-        width: 100%;
-        text-align: left;
-        padding: 15px 15px 0 14px;
-      }
-
-      .catalog-list__img {
-        height: 132px;
-      }
     }
   }
 }

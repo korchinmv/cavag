@@ -43,6 +43,11 @@
     align-items: center;
     column-gap: 16px;
     margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__wrap {
@@ -54,6 +59,14 @@
     background-color: var(--bg-gray);
     border-radius: 8px;
     transition: background-color 0.3s;
+
+    &--white {
+      background-color: var(--white);
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   &__title {
@@ -62,6 +75,7 @@
     font-family: 'DrukMedium';
     max-width: 155px;
     transition: color 0.3s;
+    text-transform: uppercase;
 
     @media screen and (width <= 768px) {
       font-size: 12px;

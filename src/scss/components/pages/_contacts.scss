@@ -19,7 +19,6 @@
   &__head-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 511px;
     margin-right: 120px;
   }
@@ -129,7 +128,7 @@
 
   &__info-adress {
     display: block;
-    font-family: 'DrukMedium';
+    font-family: 'RobotoBold';
   }
 
   &__info-time {
@@ -139,7 +138,7 @@
 
   &__info-link {
     display: block;
-    font-family: 'DrukMedium';
+    font-family: 'RobotoBold';
     color: var(--blue);
     transition: color 0.3s;
 

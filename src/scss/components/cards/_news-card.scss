@@ -63,6 +63,11 @@
     line-height: 1.4;
     margin-bottom: 16px;
     color: var(--gray);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Ограничиваем до 3 строк */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Добавляем многоточие в конце */
 
     @media screen and (width <= 768px) {
       font-size: 14px;

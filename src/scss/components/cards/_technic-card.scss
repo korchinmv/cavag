@@ -1,12 +1,13 @@
 .technic-card {
-  // padding: 24px;
   display: flex;
   flex-direction: column;
   position: relative;
+  min-height: 412px;
 
   &__link {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     margin-bottom: 16px;
 
     &:hover {
@@ -56,6 +57,7 @@
     margin-bottom: 12px;
     align-self: center;
     border-radius: 16px;
+    height: 150px;
   }
 
   &__title {
@@ -119,6 +121,7 @@
     display: flex;
     column-gap: 8px;
     align-items: center;
+    margin-top: auto;
   }
 
   &__buy-btn {

@@ -52,6 +52,10 @@
     flex-direction: column;
     height: 180px;
     padding: 16px 16px 0 16px;
+
+    @media screen and (width <= 768px) {
+      min-height: 260px;
+    }
   }
 
   &__slider-title {
@@ -65,6 +69,10 @@
   &__slider-img {
     height: 132px;
     object-fit: contain;
+
+    @media screen and (width <= 768px) {
+      height: 200px;
+    }
   }
 
   &__slider-button-primary {
@@ -82,7 +90,7 @@
       max-width: 100%;
       width: 100%;
       position: absolute !important;
-      top: 200px !important;
+      top: 285px !important;
       left: 0 !important;
     }
   }

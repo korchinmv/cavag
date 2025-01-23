@@ -3,19 +3,24 @@
     background-color: var(--bg-gray);
   }
 
+  &__slider-wrapper {
+    align-items: baseline;
+  }
+
   &__content {
     max-width: 805px;
+    min-height: 250px;
     width: 100%;
     padding-left: 12vw;
     margin-right: 30px;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (width <= 1024px) {
       margin-right: 0;
       padding: 0 16px;
       max-width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
     }
 
     @media screen and (width <= 768px) {
@@ -68,6 +73,9 @@
   }
 
   &__button-primary {
+    margin-top: auto;
+    align-self: flex-start;
+
     @media screen and (width <= 1024px) {
       align-self: flex-start;
     }
