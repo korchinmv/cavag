@@ -3,6 +3,7 @@ import "./components/overlay.js";
 import "./components/slider.js";
 import "./components/form.js";
 import "./components/asideMenu.js";
+import "./components/airplan.js";
 import "./components/accordeon.js";
 import "./components/select-menu.js";
 import "./components/chooseCityPopup.js";

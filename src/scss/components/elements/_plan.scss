@@ -1,0 +1,74 @@
+.plan {
+  &__circle {
+    cursor: pointer;
+    fill: var(--light-blue);
+    stroke-width: 4px;
+    stroke: transparent;
+    display: block;
+    transition:
+      fill 0.3s,
+      stroke 0.3s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'RobotoBold';
+      background-color: red;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.2;
+      width: 20px;
+      height: 20px;
+      display: block;
+      z-index: 99;
+    }
+
+    &:hover {
+      fill: var(--white);
+      stroke: var(--light-blue);
+    }
+  }
+
+  &__tooltip {
+    background-color: var(--white);
+    padding: 11px 17px;
+    border-radius: 37px;
+    position: relative;
+    width: fit-content;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-color: var(--light-blue);
+      border-radius: 37px 37px 0 0;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: var(--white);
+      position: absolute;
+      bottom: -7px;
+      right: 54px;
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__tooltip-text {
+    font-family: 'RobotoMedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
