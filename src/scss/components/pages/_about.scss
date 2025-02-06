@@ -100,7 +100,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (width <= 1050px) {
+    @media screen and (width <= 1290px) {
       flex-direction: column-reverse;
     }
   }
@@ -114,7 +114,7 @@
     background-color: var(--bg-gray);
     align-self: flex-start;
 
-    @media screen and (width <= 1050px) {
+    @media screen and (width <= 1290px) {
       width: 100%;
       margin-right: 0;
     }
@@ -151,6 +151,10 @@
   &__inner {
     display: flex;
     flex-direction: column;
+
+    @media screen and (width <= 1290px) {
+      margin-bottom: 112px;
+    }
   }
 
   &__sidemenu-name {
@@ -239,10 +243,43 @@
   }
 
   &__plan {
+    display: flex;
     margin-bottom: 32px;
+
+    @media screen and (width <= 990px) {
+      display: none;
+    }
 
     @media screen and (width <= 768px) {
       margin-bottom: 24px;
+    }
+  }
+
+  &__list-number {
+    display: none;
+
+    @media screen and (width <= 990px) {
+      display: block;
+    }
+  }
+
+  &__list-number-item {
+    position: relative;
+
+    &::marker {
+      color: #00aef1;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__plan-img {
+    display: none;
+
+    @media screen and (width <= 990px) {
+      display: block;
     }
   }
 
