@@ -11,6 +11,7 @@
 
     &:nth-child(even) {
       background-color: var(--white);
+      border-radius: 8px;
     }
 
     &:nth-child(odd) {
