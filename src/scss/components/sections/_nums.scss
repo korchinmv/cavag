@@ -83,6 +83,17 @@
         path {
           stroke: var(--white);
         }
+
+        &--circle {
+          path {
+            fill: var(--white);
+            stroke: transparent;
+          }
+
+          circle {
+            stroke: var(--white);
+          }
+        }
       }
     }
   }
@@ -126,23 +137,4 @@
       position: relative;
     }
   }
-}
-
-.slider-control {
-}
-.slider-control--light-blue {
-}
-.slider-control--prev {
-}
-.swiper-button-disabled {
-}
-.slider-control--next {
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.slider-pagination {
 }
